@@ -1,0 +1,4 @@
+
+# to retreive the authentication key
+Get-AzDataFactoryV2IntegrationRuntimeKey -ResourceGroupName $insertResourceGroupNameHere 
+-DataFactoryName $insertDataFactoryNameHere -Name $insertSelfHostedIntegrationRuntimeNameHere

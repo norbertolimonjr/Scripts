@@ -1,0 +1,2 @@
+SELECT concat ('alter table ', event_object_table, ' disable trigger ', trigger_name)
+FROM information_schema.triggers;

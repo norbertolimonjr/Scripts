@@ -1,0 +1,13 @@
+Get-NetFirewallRule # Displays a list of available firewall rules
+
+Enable-NetFirewallRule # Enables an existing firewall rule
+
+Disable-NetFirewallRule # Disables an existing firewall rule
+
+New-NetFirewallRule # Creates a new firewall rule
+
+Set-NetFirewallRule # Configures the properties of an existing firewall rule
+
+
+More info can be found at: https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell
+

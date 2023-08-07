@@ -1,0 +1,4 @@
+# Set Read Committed Snapshot Isolation
+
+ALTER DATABASE MyDatabase
+SET READ_COMMITTED_SNAPSHOT ON

@@ -1,0 +1,12 @@
+# Create table with Hash Distribution
+CREATE TABLE [wwi_perf].[Sale_Hash]
+WITH
+(
+   DISTRIBUTION = HASH ( [CustomerId] ),
+   CLUSTERED COLUMNSTORE INDEX
+)
+AS
+SELECT
+   *
+FROM
+   [wwi_perf].[Sale_Heap]

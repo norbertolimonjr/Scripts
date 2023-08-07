@@ -1,0 +1,7 @@
+# The following is an example of creating a materialized view named myview, 
+# using a hash distribution selecting two columns from a table and grouping by them.
+
+create materialized view mview 
+with(distribution=hash(col1)) 
+as select col1, col2 from dbo.table group by col1, col2;
+

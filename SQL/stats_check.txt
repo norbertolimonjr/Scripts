@@ -1,0 +1,7 @@
+# Check if you have Statistics Enabled
+SELECT name, is_auto_create_stats_on
+FROM sys.databases
+
+# If not, enable AUTO_CREATE_STATISTICS with
+ALTER DATABASE <yourdatawarehousename>
+SET AUTO_CREATE_STATISTICS ON

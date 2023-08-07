@@ -1,0 +1,4 @@
+# Create a self-hsoted IR via Azure Powershell:
+Set-AzDataFactoryV2IntegrationRuntime -ResourceGroupName $insertResourceGroupNameHere `
+-DataFactoryName $insertDataFactoryNameHere -Name $insertSelfHostedIntegrationRuntimeNameHere `
+-Type SelfHosted -Description "insert selfhosted IR description here."

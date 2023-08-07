@@ -1,0 +1,56 @@
+Add-BitLockerKeyProtector
+
+# Adds a key protector for a BitLocker volume
+
+Backup-BitLockerKeyProtector
+
+# Saves a key protector for a BitLocker volume in Active Directory Domain Services (AD DS)
+
+Clear-BitLockerAutoUnlock
+
+# Removes BitLocker automatic unlocking keys
+
+Disable-BitLocker
+
+# Disables BitLocker encryption for a volume
+
+Disable-BitLockerAutoUnlock
+
+# Disables automatic unlocking for a BitLocker volume
+
+Enable-BitLocker
+
+# Enables encryption for a BitLocker volume
+
+Enable-BitLockerAutoUnlock
+
+# Enables automatic unlocking for a BitLocker volume
+
+Get-BitLockerVolume
+
+# Gets information about volumes that BitLocker can protect
+
+Lock-BitLocker
+
+# Prevents access to encrypted data on a BitLocker volume
+
+Remove-BitLockerKeyProtector
+
+# Removes a key protector for a BitLocker volume
+
+Resume-BitLocker
+
+# Restores BitLocker encryption for the specified volume
+
+Suspend-BitLocker
+
+# Suspends BitLocker encryption for the specified volume
+
+Unlock-BitLocker
+
+# Restores access to data on a BitLocker volume
+
+Suspend-BitLocker -MountPoint "C:" # Suspends bitlocker temporarily on a selected drive.
+
+For more information about how to configure BitLocker using PowerShell cmdlets, visit this reference article at 
+-- https://docs.microsoft.com/powershell/module/bitlocker/?view=win10-ps.

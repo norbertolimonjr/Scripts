@@ -1,0 +1,11 @@
+dfCustomer = spark.read\
+    .format("cosmos.olap")\
+    .option("spark.synapse.linkedService", "AdventureWorksSQL")\
+    .option("spark.cosmos.container", "Customer")\
+    .load()
+
+dfSalesOrder = spark.read\
+    .format("cosmos.olap")\
+    .option("spark.synapse.linkedService", "AdventureWorksMongoDB")\
+    .option("spark.cosmos.container", "SalesOrder")\
+    .load()
